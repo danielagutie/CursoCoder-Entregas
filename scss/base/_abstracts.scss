@@ -1,0 +1,29 @@
+$colors: (
+  green1: #52a186,
+  grey1: #43484e,
+  grey2: #333,
+  grey3: #444851,
+  grey4: #f3f5f6,
+  grey5: #D3D3D3,
+  light1: #fff,
+  light2: #eee
+);
+
+@mixin font-properties ($family, $size) {
+  font-family: $family;
+  font-size: $size;
+}
+
+@mixin display-flex ($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+.flex_center {
+  @include display-flex (flex, center, center);
+}
+
+.flex_space-between {
+  @include display-flex (flex, space-between, center);
+}

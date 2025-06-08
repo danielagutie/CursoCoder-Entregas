@@ -1,0 +1,22 @@
+.section-team {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  gap: 1rem;
+  @extend .flex_center;
+
+  .card-team {
+    background-color: map-get($colors, light1);
+    border: 1px solid map-get($colors, grey5);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    p {
+      color: map-get($colors, green1);
+      @include font-properties ("Amatic SC", 30px);
+      letter-spacing: 2.5px;
+    }
+  }
+}

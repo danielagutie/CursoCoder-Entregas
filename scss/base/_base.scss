@@ -1,0 +1,19 @@
+*::selection {
+  background-color: map-get($colors, green1);
+  color: map-get($colors, light1);
+}
+
+body {
+  @include font-properties ('Montserrat', 14px);
+  font-weight: 400;
+  background-color: map-get($colors, light2);
+  color: map-get($colors, grey1);
+}
+
+.form-control:focus {
+    color: pink;
+    background-color: yellowgreen;
+    border-color: violet;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem red;
+}

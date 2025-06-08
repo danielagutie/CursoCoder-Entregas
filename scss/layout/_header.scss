@@ -1,0 +1,45 @@
+/* Header */
+.header-bar {
+  grid-area: header;
+  background-color: map-get($colors, light1);
+  color: map-get($colors, grey2);
+   @extend .flex_space-between;
+
+  .header-left,
+  .header-right {
+    width: 20%;
+    @extend .flex_space-between;
+  }
+
+  .header-center {
+    width: 60%;
+    @extend .flex_center;
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      text-decoration: none;
+      color: map-get($colors, grey1);
+       @include font-properties ("Prata", 17px);
+      letter-spacing: 4px;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-top: -6px;
+        margin-right: 5px;
+        display: inline-block;
+        background-color: map-get($colors, green1);
+        vertical-align: middle;
+      }
+
+      &.active {
+        color: map-get($colors, green1);
+      }
+    }
+  }
+}

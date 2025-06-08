@@ -1,0 +1,34 @@
+/* Button */
+.btn-outline-success {
+    border-color: map-get($colors, green1);
+    color: map-get($colors, green1);
+
+    &:hover {
+        background-color: map-get($colors, green1);
+        border-color: map-get($colors, green1);
+        color: map-get($colors, light1);
+    }
+}
+
+/* Accordion */
+.accordion-button {
+    color: map-get($colors, green1);
+    background-color: map-get($colors, light1);
+
+    &:not(.collapsed) {
+        color: map-get($colors, light1);
+        background-color: map-get($colors, green1);
+    }
+}
+
+/* Input text */
+input[type="text"] {
+    border: none;
+    font-size: 13px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: map-get($colors, green1);
+}

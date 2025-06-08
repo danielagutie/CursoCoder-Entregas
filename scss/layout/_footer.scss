@@ -1,0 +1,12 @@
+/* Footer */
+footer {
+  grid-area: footer;
+  background-color: map-get($colors, grey2);
+  gap: 5px;
+  @extend .flex_center;
+
+  i {
+    color: map-get($colors, light1);
+    font-size: 20px;
+  }
+}

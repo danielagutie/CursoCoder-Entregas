@@ -1,0 +1,35 @@
+.section-page {
+    text-align: center;
+    margin: 56px 0px 40px 0;
+
+    .section-title {
+        text-align: center;
+
+        h2 {
+            @include font-properties ("Pratta", 45px);
+            text-transform: capitalize;
+            margin: 36px 0px;
+        }
+
+        h6 {
+            color: map-get($colors, green1);
+            @include font-properties ("Amatic SC", 30px);
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    }
+
+    .section-texto p {
+        font-size: 20px;
+        line-height: 1.86;
+        margin: 0px 400px 0px 400px;
+    }
+}
+
+.section-center {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}

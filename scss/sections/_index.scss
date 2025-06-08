@@ -1,0 +1,47 @@
+/* Page index > Section Newsletter */
+.section-newsletter {
+  width: 100%;
+  background-color: map-get($colors, grey4);
+  padding: 20px;
+  margin-bottom: 10px;
+
+  label {
+    color: map-get($colors, grey3);
+  }
+
+  input[type="text"] {
+    height: 30px;
+    width: 500px;
+  }
+}
+
+/* Page index > Section Testimonios */
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+  color: map-get($colors, grey3);
+  @include font-properties ("Prata", 17px);
+
+  h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  p {
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
