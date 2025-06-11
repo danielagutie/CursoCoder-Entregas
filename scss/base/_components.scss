@@ -7,6 +7,7 @@
         background-color: map-get($colors, green1);
         border-color: map-get($colors, green1);
         color: map-get($colors, light1);
+        transition: 2s linear;
     }
 }
 
@@ -19,6 +20,10 @@
         color: map-get($colors, light1);
         background-color: map-get($colors, green1);
     }
+}
+
+.accordion-body {
+    text-align: justify;
 }
 
 /* Input text */

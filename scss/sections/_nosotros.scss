@@ -18,5 +18,20 @@
       @include font-properties ("Amatic SC", 30px);
       letter-spacing: 2.5px;
     }
+
+    &:hover {
+      animation: aparecer 4s;
+    }
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    border-radius: 8 8 8 8 ;
+  }
+
+  25% {
+    border-radius: 50% 0 0 0;
+    background-color: map-get($colors, grey2);;
   }
 }
