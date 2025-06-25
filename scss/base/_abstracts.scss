@@ -6,7 +6,8 @@ $colors: (
   grey4: #f3f5f6,
   grey5: #D3D3D3,
   light1: #fff,
-  light2: #eee
+  light2: #eee,
+  light3: #f5f5f5
 );
 
 @mixin font-properties ($family, $size) {

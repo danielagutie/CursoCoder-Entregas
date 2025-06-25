@@ -1,9 +1,10 @@
 /* Header */
+
 .header-bar {
   grid-area: header;
   background-color: map-get($colors, light1);
   color: map-get($colors, grey2);
-   @extend .flex_space-between;
+  @extend .flex_space-between;
 
   .header-left,
   .header-right {
@@ -17,12 +18,29 @@
   }
 }
 
+.offcanvas {
+  background-color: map-get($colors, light1);
+}
+
+.offcanvas .nav-link {
+  font-family: "Prata";
+  font-size: 18px;
+  color: map-get($colors, grey1);
+  padding: 10px;
+}
+
+.offcanvas .nav-link.active,
+.offcanvas .nav-link:hover {
+  color: map-get($colors, green1);
+  background-color: map-get($colors, light3);
+}
+
 .navbar-nav {
   .nav-item {
     .nav-link {
       text-decoration: none;
       color: map-get($colors, grey1);
-       @include font-properties ("Prata", 17px);
+      @include font-properties ("Prata", 17px);
       letter-spacing: 4px;
 
       &::before {

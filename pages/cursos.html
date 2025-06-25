@@ -27,34 +27,58 @@
 <body>
     <div class="grid-container">
         <header class="header-bar">
-            <div class="header-left">
-                <a href="../index.html"><img width="125" height="70" src="../assets/img/marca/logo-yogui.jpg"
-                        alt="Y O G U I"></a>
+            <div class="header-left d-none d-lg-block">
+                <a href="../index.html">
+                    <img src="../assets/img/marca/logo-yogui.jpg" alt="Logo YOGUI" width="125" height="70">
+                </a>
             </div>
-            <div class="header-center">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link" aria-current="page"
-                                        href="../index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
-                                <li class="nav-item"><a class="nav-link" href="meditaciones.html">Meditaciones</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                            </ul>
-                        </div>
+
+            <div class="header-center container-fluid">
+                <nav class="navbar navbar-expand-lg position-relative w-100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Logo centrado solo en mobile -->
+                    <a class="navbar-brand d-lg-none mx-auto position-absolute start-50 translate-middle-x"
+                        href="../index.html">
+                        <img src="../assets/img/marca/logo-yogui.jpg" alt="Logo YOGUI" width="100">
+                    </a>
+
+                    <!-- Menu expandido solo en desktop -->
+                    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="meditaciones.html">Meditaciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
-            <div class="header-right">
-            </div>
+
+            <div class="header-right d-none d-lg-block"></div>
         </header>
+
+        <div class="offcanvas offcanvas-start d-lg-none" id="offcanvasMenu" tabindex="-1">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditaciones.html">Meditaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
 
         <main>
             <section class="section-banner section-banner-nosotros">

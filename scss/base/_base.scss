@@ -9,11 +9,3 @@ body {
   background-color: map-get($colors, light2);
   color: map-get($colors, grey1);
 }
-
-.form-control:focus {
-    color: pink;
-    background-color: yellowgreen;
-    border-color: violet;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem red;
-}
